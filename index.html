@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel do Canal - Luckz ツ</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #fff;
+      font-family: "Roboto", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #1e1e1e;
+      padding: 10px 15px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .header-left img {
+      width: 25px;
+      height: 25px;
+    }
+    .header-left span {
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .user-avatar {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+    }
+    .main {
+      padding: 15px;
+    }
+    .channel-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .channel-info img {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .channel-info h2 {
+      font-size: 18px;
+      margin: 0;
+    }
+    .channel-info p {
+      margin: 2px 0;
+      color: #aaa;
+      font-size: 13px;
+    }
+    .stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 25px;
+    }
+    .card {
+      background-color: #1e1e1e;
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .card h3 {
+      color: #999;
+      font-size: 12px;
+      margin-bottom: 4px;
+    }
+    .card p {
+      font-size: 17px;
+      font-weight: bold;
+      margin: 0;
+    }
+    .money {
+      color: #00ff66;
+      font-weight: bold;
+    }
+    .resgatar-btn {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 6px 15px;
+      background-color: #006400; 
+      color: #fff;
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background-color 0.2s;
+    }
+    .resgatar-btn:hover {
+      background-color: #004d00;
+    }
+    .content h3 {
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+    .video {
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      padding: 8px;
+      display: flex;
+      gap: 10px;
+      margin-bottom: 12px;
+      align-items: center;
+    }
+    .video img {
+      width: 100px;
+      height: 65px;
+      border-radius: 6px;
+      object-fit: cover;
+    }
+    .video-info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .video-info h4 {
+      font-size: 13px;
+      margin: 0;
+      color: #fff;
+    }
+    .video-info p {
+      font-size: 12px;
+      color: #aaa;
+      margin: 3px 0;
+    }
+    .video-stats {
+      font-size: 11px;
+      color: #ccc;
+    }
+    .earnings {
+      font-size: 13px;
+      font-weight: bold;
+      margin-top: 4px;
+    }
+    .earnings.green {
+      color: #00ff66;
+    }
+    .earnings.red {
+      color: #ff4444;
+      text-decoration: line-through;
+      display: inline-block;
+      margin-right: 6px;
+    }
+    .earnings.yellow {
+      color: #ffcc00;
+      font-weight: bold;
+      display: inline-block;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      color: #777;
+      border-top: 1px solid #333;
+      font-size: 12px;
+      margin-top: 15px;
+    }
+    @media (max-width: 450px) {
+      .stats {
+        grid-template-columns: 1fr;
+      }
+      .video img {
+        width: 90px;
+        height: 60px;
+      }
+      .video-info h4 {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="header-left">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube Logo">
+      <span>Studio</span>
+    </div>
+    <img class="user-avatar" src="lucksz.jpg" alt="Avatar">
+  </div>
+
+  <div class="main">
+    <div class="channel-info">
+      <img src="lucksz.jpg" alt="Avatar">
+      <div>
+        <h2>Luckz ツ</h2>
+        <p>140 inscritos</p>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="card">
+        <h3>Visualizações</h3>
+        <p>47</p>
+      </div>
+      <div class="card">
+        <h3>Tempo de exibição (h)</h3>
+        <p>0,4</p>
+      </div>
+      <div class="card">
+        <h3>Receita total</h3>
+        <p class="money">R$ 0,43</p>
+        <a href="https://wa.me/5511960679529?text=Ol%C3%A1!%20%F0%9F%98%83%20Tudo%20bem%3F%20Quero%20resgatar%20AGORA%20minha%20receita%20total%20do%20YouTube%2C%20que%20%C3%A9%20R%240%2C43%20%F0%9F%92%B8%F0%9F%92%B0%F0%9F%92%B5%F0%9F%8E%89.%20Obrigado(a)%20pelo%20atendimento!%20%F0%9F%99%8F%F0%9F%9A%80" target="_blank" class="resgatar-btn">Resgatar</a>
+      </div>
+    </div>
+
+    <div class="content">
+      <h3>Conteúdo publicado recentemente</h3>
+
+      <div class="video">
+        <img src="rlvideo.jpg" alt="Thumb">
+        <div class="video-info">
+          <h4>Jogando com melhores no 3v3 kkk…</h4>
+          <p>Primeiros 15 dias, 9 horas</p>
+          <div class="video-stats">43 views · 4 likes · 0 comentários</div>
+          <div class="earnings green">R$ 0,43</div>
+        </div>
+      </div>
+
+      <div class="video">
+        <img src="skatevideo.jpg" alt="Thumb">
+        <div class="video-info">
+          <h4>Novo Skate é muito engraçado kkkkkkk</h4>
+          <p><span class="earnings red">R$ 25,00</span><span class="earnings yellow">Direitos autorais</span></p>
+          <div class="video-stats">2,5 mil views · 170 likes · 6 comentários</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 - Painel de estatísticas do canal Luckz ツ
+  </footer>
+</body>
+</html>
